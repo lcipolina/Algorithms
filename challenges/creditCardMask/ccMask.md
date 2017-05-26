@@ -17,3 +17,13 @@ maskify("Skippy") == "##ippy"
 Source: [CodeWars](http://www.codewars.com/kata/credit-card-mask/javascript)
 
 submitted by [Kate Shishkina](https://github.com/shishkina)
+myInput = "4556364607935616"
+
+myInput2 = myInput[len(myInput)-4:]
+
+myList = []
+for i in range(len(myInput)-4):
+    myList.append('#')
+hashes = ''.join(myList)
+result = hashes + myInput2
+print(result)
